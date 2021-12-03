@@ -36,27 +36,27 @@ client3.onMessage() //enables UMC Custom Bot (3)#7898 to see messages (required 
 client4.onMessage() //enables UMC Custom Bot (4)#8339 to see messages (required for executing Commands)
 client5.onMessage() //enables UMC Custom Bot (5)#7525 to see messages (required for executing Commands)
 
-client1.command({
-name: "ping",
-code: `> **Pong!** $ping ms`
-});
+client1.readyCommand({ //Makes a console log whenever UMC Custom Bot (1)#5990 is online.
+    channel: "852197346870558741",
+    code: `$log[Client 1 is online.]`
+})
 
-client2.command({
-name: "ping",
-code: `> **Pong!** $ping ms`
-});
+client2.readyCommand({ //Makes a console log whenever UMC Custom Bot (2)#7495 online.
+    channel: "852197346870558741",
+    code: `$log[Client 2 is online.]`
+})
 
-client3.command({
-name: "ping",
-code: `> **Pong!** $ping ms`
-});
+client3.readyCommand({ //Makes a console log whenever UMC Custom Bot (3)#7898 is online.
+    channel: "852197346870558741",
+    code: `$log[Client 3 is online.]`
+})
 
-client4.command({
-name: "ping",
-code: `> **Pong!** $ping ms`
-});
+client4.readyCommand({ //Makes a console log whenever UMC Custom Bot (4)#8339 is online.
+    channel: "852197346870558741",
+    code: `$log[Client 4 is online.]`
+})
 
-client5.command({
-name: "ping",
-code: `> **Pong!** $ping ms`
-});
+client5.readyCommand({ //Makes a console log whenever UMC Custom Bot (5)#7525 is online.
+    channel: "852197346870558741",
+    code: `$log[Client 5 is online.]`
+})
