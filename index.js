@@ -1,10 +1,3 @@
-const express = require("express");
-const app = express();
-const port = 3000
-app.get('/', (req, res) => res.send('All Systems Operational.'))
-app.listen(port, () =>
-console.log('Webserver Active.'))
-
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
    token: process.env['CT1'],
