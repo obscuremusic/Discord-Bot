@@ -1,30 +1,30 @@
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
-   token: "insert",
+   token: process.env['CT1'],
    prefix: ["+","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
  const client2 = new aoijs.Bot({
-   token: "insert",
+   token: process.env['CT2'],
    prefix: ["~","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
  const client3 = new aoijs.Bot({
-   token: "insert",
+   token: process.env['CT3'],
    prefix: ["%","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
   const client4 = new aoijs.Bot({
-   token: "insert",
+   token: process.env['CT4'],
    prefix: ["-","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
   const client5 = new aoijs.Bot({
-   token: "insert",
+   token: process.env['CT5'],
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
