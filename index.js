@@ -1,3 +1,10 @@
+const http = require('http');
+const server = http.createServer((req, res) => {
+ res.writeHead(200);
+ res.end('All Systems Operational.');
+});
+server.listen(3000);
+
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
    token: process.env['CT1'],
