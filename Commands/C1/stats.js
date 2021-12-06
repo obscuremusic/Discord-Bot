@@ -25,6 +25,5 @@ $description[**Client Figures**
 $image[https://cdn.discordapp.com/attachments/699913581386268724/858043879885373490/20210625_232923.jpg]
 $footer[Made with ♡ by lethiferal.]
 $addTimestamp
-$color[2f3135]
-$suppressErrors[> :information_source: **An error occured, try again.**]`
+$color[2f3135]`
    }
