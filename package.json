@@ -1,8 +1,17 @@
 {
-  "devDependencies": {
-    "node": "^16.6.1"
-  },
-  "dependencies": {
-    "aoi.js": "^5.0.0"
+    "name": "UMC CB",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "engines": {
+      "node": "16.6"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "aoi.js": "^5.0.0"
+    }
   }
-}
