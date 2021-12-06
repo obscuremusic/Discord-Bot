@@ -44,6 +44,11 @@ client3.onMessage() //enables UMC Custom Bot (3)#7898 to see messages (required 
 client4.onMessage() //enables UMC Custom Bot (4)#8339 to see messages (required for executing Commands)
 client5.onMessage() //enables UMC Custom Bot (5)#7525 to see messages (required for executing Commands)
 
+client1.variables(variables)
+client2.variables(variables)
+client3.variables(variables)
+client4.variables(variables)
+client5.variables(variables)
 
 client1.status({ //enables UMC Custom Bot (1)#5990's client status.
   text: "+help | On Maintainance.",
