@@ -1,5 +1,4 @@
 const variables = {
- name: "value",
- name2: "value2"
+ chatbotchannel: "759309051287830558",
 };
 module.exports = variables;
