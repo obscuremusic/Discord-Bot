@@ -34,7 +34,7 @@ const client1 = new aoijs.Bot({
  });
  
   const client5 = new aoijs.Bot({
-   token: "ODUzNjI5NzEyNDU3NTMxNDAz.YMYKnw.f48EmFFzWqE_737vUh3dz1_2y5Q",
+   token: "ODUzNjI5NzEyNDU3NTMxNDAz.YMYKnw.JVZjStZovxdygIHbDlU3G-mxsy0",
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
