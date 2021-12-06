@@ -1,30 +1,30 @@
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
-   token: process.env['CT1'],
+   token: "ODUxODE1ODQ0NjUxNDY2Nzgz.YL9xUw.72-5XsNWRCWRHqRAbgcc5fTti_s",
    prefix: ["+","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
  const client2 = new aoijs.Bot({
-   token: process.env['CT2'],
+   token: "ODUxODIwMjU5MTk0NDM3NzIy.YL91bw.Vou7-5s83tSb4K7yjIsxQSRhYGM",
    prefix: ["~","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
  const client3 = new aoijs.Bot({
-   token: process.env['CT3'],
+   token: "ODUxODI1Mjg4MDMwNzE1OTU0.YL96Hg.YVvokGA_couP8oWb9HeIwGx0jEE",
    prefix: ["%","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
   const client4 = new aoijs.Bot({
-   token: process.env['CT4'],
+   token: "ODUxODMxNTc2MTkwMjU1MTA1.YL9_-g.IFBL8VqDfSjeVQ0HXjqamE8QUBA",
    prefix: ["-","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
   const client5 = new aoijs.Bot({
-   token: process.env['CT5'],
+   token: "ODUzNjI5NzEyNDU3NTMxNDAz.YMYKnw.f48EmFFzWqE_737vUh3dz1_2y5Q",
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
