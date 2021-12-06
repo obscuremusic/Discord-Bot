@@ -35,6 +35,68 @@ client3.onMessage() //enables UMC Custom Bot (3)#7898 to see messages (required 
 client4.onMessage() //enables UMC Custom Bot (4)#8339 to see messages (required for executing Commands)
 client5.onMessage() //enables UMC Custom Bot (5)#7525 to see messages (required for executing Commands)
 
+
+client1.status({ //enables UMC Custom Bot (1)#5990's client status.
+  text: "+help | On Maintainance.",
+  type: "STREAMING",
+  time: 5
+})
+
+client1.status({
+  text: "+stat | On Maintainance.",
+  type: "STREAMING",
+  time: 20
+})
+
+client2.status({ //enables UMC Custom Bot (2)#7495's client status.
+  text: "~help | On Maintainance.",
+  type: "STREAMING",
+  time: 5
+})
+
+client2.status({ 
+  text: "~stat | On Maintainance.",
+  type: "STREAMING",
+  time: 20
+})
+
+client3.status({ //enables UMC Custom Bot (3)#7898's client status.
+  text: "%help | On Maintainance.",
+  type: "STREAMING",
+  time: 5
+})
+
+client3.status({ 
+  text: "%stat | On Maintainance.",
+  type: "STREAMING",
+  time: 20
+})
+
+client4.status({ //enables UMC Custom Bot (4)#8339's client status.
+  text: "-help | On Maintainance.",
+  type: "STREAMING",
+  time: 5
+})
+
+client4.status({
+  text: "-stat | On Maintainance.",
+  type: "STREAMING",
+  time: 20
+})
+
+client5.status({ //enables UMC Custom Bot (5)#7525's client status.
+  text: "=help | On Maintainance.",
+  type: "STREAMING",
+  time: 5
+})
+
+client5.status({
+  text: "=stat | On Maintainance.",
+  type: "STREAMING",
+  time: 20
+})
+
+
 client1.readyCommand({ //Makes a console log whenever UMC Custom Bot (1)#5990 is online.
     channel: "",
     code: `$log[Client 1 is online.]`
