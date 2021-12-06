@@ -13,5 +13,5 @@ $color[000001]
 $thumbnail[$jsonRequest[http://api.somecool.repl.co/weather?place=$message[1]+$message[2]+$message[3]+$message[4]+$message[5];image_url; ]]
 $image[https://wttr.in/$message[1]+$message[2]+$message[3]+$message[4]+$message[5].png?m]
 $onlyIf[$message[1]!=;> **:information_source: Add a place.**]
-$onlyIf[$jsonRequest[http://api.somecool.repl.co/weather?place=$message[1]+$message[2]+$message[3]+$message[4]+$message[5];location;]!=;> **:information_source: No place found with the name "$message[1]".**]`
+$onlyIf[$jsonRequest[http://api.somecool.repl.co/weather?place=$message[1]+$message[2]+$message[3]+$message[4]+$message[5];location;]!=;> **:information_source: No place found with the name "$message[1]+$message[2]+$message[3]+$message[4]+$message[5]".**]`
    }
