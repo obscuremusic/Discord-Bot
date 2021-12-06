@@ -7,6 +7,7 @@ app.listen(port, () =>
 console.log('Listening at https://localhost:${port}'))
 console.log('Webserver Active.')
 
+const variables = require("./variables")
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
    token: "ODUxODE1ODQ0NjUxNDY2Nzgz.YL9xUw.72-5XsNWRCWRHqRAbgcc5fTti_s",
