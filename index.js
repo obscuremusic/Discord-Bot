@@ -1,3 +1,12 @@
+const express = require("express");
+const app = express();
+const port = 3000
+app.get('/', (req, res) => res.send('All Systems Operational.'))
+
+app.listen(port, () =>
+console.log('Listening at https://localhost:${port}'))
+console.log('Webserver Active.')
+
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
    token: "ODUxODE1ODQ0NjUxNDY2Nzgz.YL9xUw.72-5XsNWRCWRHqRAbgcc5fTti_s",
