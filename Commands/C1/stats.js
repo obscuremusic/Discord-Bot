@@ -1,8 +1,6 @@
-module.exports = {
-   channel:"$channelId",
+module.exports ={
    name:"stats",
    aliases: ["st","uptime","ping","ram","cpu"],
-   type:"default",
    code:`$author[Client Statistics • $username[$clientID] Health;$userAvatar[$clientID]]
 $description[**Client Figures**
 \`\`\`html
@@ -23,7 +21,5 @@ $description[**Client Figures**
 • Discord.js Version   : v12.5.3\`\`\`
 **[Website](https://undergroundmusic.carrd.co/ 'Enter UMC Website') | [Donate](https://ko-fi.com/undergroundmusic 'Donate to UMC') | [Commands](https://undergroundmusic.carrd.co/#commands)**]
 $image[https://cdn.discordapp.com/attachments/699913581386268724/858043879885373490/20210625_232923.jpg]
-$footer[Made with ♡ by lethiferal.]
-$addTimestamp
 $color[2f3135]`
-   }
+}
