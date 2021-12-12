@@ -10,31 +10,31 @@ console.log('Webserver Active.')
 const variables = require("./variables")
 const aoijs = require('aoi.js');
 const client1 = new aoijs.Bot({
-   token: "ODUxODE1ODQ0NjUxNDY2Nzgz.YL9xUw.72-5XsNWRCWRHqRAbgcc5fTti_s",
+   token: process.env['CT1'],
    prefix: ["+","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
  const client2 = new aoijs.Bot({
-   token: "ODUxODIwMjU5MTk0NDM3NzIy.YL91bw.Vou7-5s83tSb4K7yjIsxQSRhYGM",
+   token: process.env['CT2'],
    prefix: ["~","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
  const client3 = new aoijs.Bot({
-   token: "ODUxODI1Mjg4MDMwNzE1OTU0.YL96Hg.YVvokGA_couP8oWb9HeIwGx0jEE",
+   token: process.env['CT3'],
    prefix: ["%","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
   const client4 = new aoijs.Bot({
-   token: "ODUxODMxNTc2MTkwMjU1MTA1.YL9_-g.IFBL8VqDfSjeVQ0HXjqamE8QUBA",
+   token: process.env['CT4'],
    prefix: ["-","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
   const client5 = new aoijs.Bot({
-   token: "ODUzNjI5NzEyNDU3NTMxNDAz.YMYKnw.JVZjStZovxdygIHbDlU3G-mxsy0",
+   token: process.env['CT5'],
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
