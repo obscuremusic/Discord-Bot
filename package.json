@@ -13,6 +13,5 @@
     "license": "ISC",
     "dependencies": {
       "aoi.js": "^5.0.3"
-      "tritanbot-ytdl": "^0.0.0",
     }
   }
