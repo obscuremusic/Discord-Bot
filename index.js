@@ -1,43 +1,75 @@
 const variables = require("./variables")
 const aoijs = require('aoi.js');
-const Lavalink = new aoijs.Lavalink(bot);
-
-Lavalink.addNode({
-    url: "lava.nkno.site:80",
-    password: "LAVA",
-    name: "NKNO",
-    secure: true
-})
 
 const client1 = new aoijs.Bot({
    token: process.env['CT1'],
    prefix: ["+","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
+
+const LavalinkCT1 = new aoijs.Lavalink(client1);
+Lavalink.addNode({
+    url: "lava.nkno.site:80",
+    password: "LAVA",
+    name: "NKNO",
+    secure: true
+})
  
  const client2 = new aoijs.Bot({
    token: process.env['CT2'],
    prefix: ["~","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
+
+const LavalinkCT2 = new aoijs.Lavalink(client2);
+Lavalink.addNode({
+    url: "lava.nkno.site:80",
+    password: "LAVA",
+    name: "NKNO",
+    secure: true
+})
  
  const client3 = new aoijs.Bot({
    token: process.env['CT3'],
    prefix: ["%","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
+
+const LavalinkCT3 = new aoijs.Lavalink(client3);
+Lavalink.addNode({
+    url: "lava.nkno.site:80",
+    password: "LAVA",
+    name: "NKNO",
+    secure: true
+})
  
   const client4 = new aoijs.Bot({
    token: process.env['CT4'],
    prefix: ["-","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
+
+const LavalinkCT2 = new aoijs.Lavalink(client4);
+Lavalink.addNode({
+    url: "lava.nkno.site:80",
+    password: "LAVA",
+    name: "NKNO",
+    secure: true
+})
  
   const client5 = new aoijs.Bot({
    token: process.env['CT5'],
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
+
+const LavalinkCT1 = new aoijs.Lavalink(client5);
+Lavalink.addNode({
+    url: "lava.nkno.site:80",
+    password: "LAVA",
+    name: "NKNO",
+    secure: true
+})
 
 client1.onMessage() //enables UMC Custom Bot (1)#5990 to see messages (required for executing Commands)
 client2.onMessage() //enables UMC Custom Bot (2)#7495 to see messages (required for executing Commands)
