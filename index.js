@@ -8,7 +8,7 @@ const client1 = new aoijs.Bot({
  });
 
 const LavalinkCT1 = new aoijs.Lavalink(client1);
-Lavalink.addNode({
+LavalinkCT1.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
     name: "NKNO",
@@ -22,7 +22,7 @@ Lavalink.addNode({
  });
 
 const LavalinkCT2 = new aoijs.Lavalink(client2);
-Lavalink.addNode({
+LavalinkCT2.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
     name: "NKNO",
@@ -36,7 +36,7 @@ Lavalink.addNode({
  });
 
 const LavalinkCT3 = new aoijs.Lavalink(client3);
-Lavalink.addNode({
+LavalinkCT3.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
     name: "NKNO",
@@ -50,7 +50,7 @@ Lavalink.addNode({
  });
 
 const LavalinkCT4 = new aoijs.Lavalink(client4);
-Lavalink.addNode({
+LavalinkCT4.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
     name: "NKNO",
@@ -64,7 +64,7 @@ Lavalink.addNode({
  });
 
 const LavalinkCT5 = new aoijs.Lavalink(client5);
-Lavalink.addNode({
+LavalinkCT5.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
     name: "NKNO",
