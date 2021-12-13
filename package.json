@@ -1,5 +1,5 @@
 {
-    "name": "UMCCAA",
+    "name": "-asdf",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -7,12 +7,11 @@
       "start": "node index.js"
     },
     "engines": {
-      "node": "16.8.0"
+      "node": "16.6"
     },
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "aoi.js": "^5.0.3",
-      "discord-ytdl-core": "^5.0.4",
+      "aoi.js": "^5.0.3"
     }
   }
