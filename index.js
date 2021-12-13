@@ -1,5 +1,14 @@
 const variables = require("./variables")
 const aoijs = require('aoi.js');
+const Lavalink = new aoijs.Lavalink(bot);
+
+Lavalink.addNode({
+    url: "lava.nkno.site:80",
+    password: "LAVA",
+    name: "NKNO",
+    secure: true
+})
+
 const client1 = new aoijs.Bot({
    token: process.env['CT1'],
    prefix: ["+","<@$clientID>","<@!$clientID>"],
