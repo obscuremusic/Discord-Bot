@@ -49,7 +49,7 @@ Lavalink.addNode({
    intents: "all"
  });
 
-const LavalinkCT2 = new aoijs.Lavalink(client4);
+const LavalinkCT4 = new aoijs.Lavalink(client4);
 Lavalink.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
@@ -63,7 +63,7 @@ Lavalink.addNode({
    intents: "all"
  });
 
-const LavalinkCT1 = new aoijs.Lavalink(client5);
+const LavalinkCT5 = new aoijs.Lavalink(client5);
 Lavalink.addNode({
     url: "lava.nkno.site:80",
     password: "LAVA",
