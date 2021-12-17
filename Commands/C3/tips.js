@@ -3,10 +3,10 @@
     aliases:["tip","cheats","cheat"],
     code:`$if[$random[1;2;no]==1]
     $sendMessage[{execute:progression};no]
+    $endif
     $elseIf[$random[1;2;no]==2]
     $sendMessage[{execute:guitarchord};no]
-    $endelseIf
-    $endif`
+    $endelseIf`
 },{
 name:"progression",
 type:"awaited",
