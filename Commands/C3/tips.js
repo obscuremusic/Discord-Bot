@@ -1,7 +1,7 @@
  module.exports = [{
     name:"tips",
     aliases:["tip","cheats","cheat"],
-    code:`$loop[1;progression]`
+    code:`$sendMessage[{execute:progression};no]`
     },{
   name:"progression",
   type:"awaited",
