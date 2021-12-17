@@ -2,7 +2,7 @@
     name:"tips",
     aliases:["tip","cheats","cheat"],
     code:`
-$if[$random[1;1;no]==1]
+$if[$random[1;2;no]==1]
 $loop[1;{execute:progression}]
 
 `
