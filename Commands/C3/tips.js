@@ -1,12 +1,7 @@
  module.exports = [{
     name:"tips",
     aliases:["tip","cheats","cheat"],
-    code:`$if[$random[1;2;no]==1]
-    $sendMessage[{execute:progression};no]
-    $endif
-    $elseIf[$random[1;2;no]==2]
-    $sendMessage[{execute:guitarchord};no]
-    $endelseIf`
+    code:`$randomText[$sendMessage[{execute:progression};no];$sendMessage[{execute:guitarchord};no]]`
 },{
 name:"progression",
 type:"awaited",
