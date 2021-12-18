@@ -1,6 +1,6 @@
 module.exports ={
 name:"functions",
-aliases:["commandlist","functionlist"],
+aliases:["commandlist","function"],
 code:`$title[1;$getObjectProperty[data[0].name];https://aoi.leref.ga/functions/$replaceText[$getObjectProperty[data[0].name];$;usd]]
 $author[1;aoi.js (Stable)]
 $addField[1;Source;[Documentation](https://aoi.leref.ga);yes]
