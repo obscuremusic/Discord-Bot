@@ -1,13 +1,13 @@
  module.exports = [{
     name:"tips",
     aliases:["tip","cheats","cheat"],
-    code:`$let[tip;$random[1;2;no]]
-    $if[$get[tip]==1]
+    code:`$if[$get[tip]==1]
     $sendMessage[{execute:progression};no]
     $elseIf[$get[tip]==2]
     $sendMessage[{execute:guitarchord};no]]
     $endelseif
-    $endif`
+    $endif
+    $let[tip;$random[1;2;no]]`
 },{
 name:"progression",
 type:"awaited",
