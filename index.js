@@ -71,6 +71,9 @@ LavalinkCT5.addNode({
     secure: true
 })
 
+client1.onJoin()
+client1.onLeave()
+
 client1.onMessage() //enables UMC Custom Bot (1)#5990 to see messages (required for executing Commands)
 client2.onMessage() //enables UMC Custom Bot (2)#7495 to see messages (required for executing Commands)
 client3.onMessage() //enables UMC Custom Bot (3)#7898 to see messages (required for executing Commands)
