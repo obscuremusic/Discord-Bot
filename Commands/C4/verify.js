@@ -7,7 +7,7 @@ aliases:["confirm","validate"],
 code:`$sendMessage[{execute:verifiedstaffnotification};no]
 $sendDM[{execute:verifiedmembernotification};$findMember[$message];no]
 $giveRole[$findMember[$message];$getServerVar[membershiprole]]
-$onlyIf[$hasAnyPerm[$authorID;kick;ban;admin;manageserver]==true;> :information_source: **You don't have enough permissions.**]`
+$onlyPerms[kick;> :information_source: **You don't have enough permissions.**]`
 },{
   name:"verifiedmembernotification",
   type:"awaited",
