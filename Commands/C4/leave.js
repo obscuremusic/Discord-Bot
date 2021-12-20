@@ -8,5 +8,5 @@ module.exports = {
   $author[1;$username#$discriminator left.;https://cdn.discordapp.com/attachments/889976693102628904/922213725090492456/remove-user.png]
   $addField[1;User ID;\`\`\`kt\n$authorID\`\`\`;yes]
   $addFields[1;Leave Date:\`\`\`kt\n$formatDate[$dateStamp;L], $hour#COLON#$minute#COLON#$second AM/PM (UTC)\`\`\`:yes;Creation Date:\`\`\`kt\n$creationDate[$authorID]\`\`\`:yes]
-  $color[1;8B00000]`
+  $color[1;8B0000]`
 }
