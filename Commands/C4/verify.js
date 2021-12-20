@@ -4,11 +4,10 @@ category: "moderation",
 description: "Verifies the given member",
 usage: "-verify <user id>", 
 aliases:["confirm","validate"],
-code:`
-$sendMessage[{execute:verifiedstaffnotification};no]
+code:`$sendMessage[{execute:verifiedstaffnotification};no]
 $sendDM[{execute:verifiedmembernotification};$findMember[$message];no]
 $giveRole[$findMember[$message];$getServerVar[membershiprole]]
-$onlyIf[$hasPerms[$authorID;kick]==true;> :information_source: **You don't have enough permissions.**]`
+$onlyIf[$hasAnyPerm[$authorID;kick;ban;admin;manageserver]==true;> :information_source: **You don't have enough permissions.**]`
 },{
   name:"verifiedmembernotification",
   type:"awaited",
