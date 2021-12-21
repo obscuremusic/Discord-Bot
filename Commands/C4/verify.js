@@ -6,7 +6,7 @@ usage: "-verify <user id>",
 aliases:["confirm","validate"],
 code:`$sendDM[{execute:verifiedmembernotification};$findMember[$message];no]
 $onlyIf[$isUserDMEnabled[$findMember[$message[1]]]==true;> :information_source: **$username[$findMember[$message[1]]]#$discriminator[$findMember[$message[1]]] Doesn't have their DMs Enabled.**]
-$sendMessage[> :white_check_mark: **$username[$findMember[$message[1]]]#$discriminator[$findMember[$message[1]]] was given access too the server.** ;no]
+$sendMessage[> :white_check_mark: **$username[$findMember[$message[1]]]#$discriminator[$findMember[$message[1]]] was given access to the server.** ;no]
 $giveRole[$guildID;$findMember[$message[1]];$getServerVar[membershiprole]]
 $onlyPerms[kick;> :information_source: **You don't have enough permissions.**]
 $let[validationID;$randomString[8]]`
