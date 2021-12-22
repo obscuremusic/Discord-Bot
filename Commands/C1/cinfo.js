@@ -10,7 +10,7 @@ $addField[1;Description;$commandInfo[$message[1];description];no]
 $addField[1;Usage;$commandInfo[$message[1];usage];yes]
 $addField[1;Aliases;$commandInfo[$message[1];aliases];yes]
 $addField[1;Category;$commandInfo[$message[1];category];yes]
-$footer[Requested by $username[$authorID]]
-$color[000000]
+$footer[1;Requested by $username[$authorID]]
+$color[1;000000]
 $onlyIf[$message[1]!=;]`
 }
