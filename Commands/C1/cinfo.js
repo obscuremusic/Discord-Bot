@@ -12,5 +12,6 @@ $addField[1;Aliases;\`\`\`fix\n$commandInfo[$message[1];aliases]\`\`\`;yes]
 $addField[1;Category;\`\`\`fix\n$commandInfo[$message[1];category]\`\`\`;yes]
 $footer[1;Requested by $username[$authorID]]
 $color[1;000000]
+$onlyIf[$commandInfo[$message[1];name]!=;> :negative_squared_cross_mark: **Command was not found in the database.**]
 $onlyIf[$message[1]!=;]`
 }
