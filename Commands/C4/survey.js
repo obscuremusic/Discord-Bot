@@ -12,7 +12,7 @@ Since we're a private server, it is important that we keep track of who gets acc
 $image[2;https://cdn.discordapp.com/attachments/590020114234081280/759371484287860766/20200926_164101.jpg]
 $color[2;2f3135]
 $addbutton[1;Discord Survey;3;verify_vd;no;✅]
-$addbutton[2;Form Submission;5;https://forms.gle/L8VjMVexgVG4C8gN8;no;☑]
+$addbutton[2;Form Submit;5;https://forms.gle/L8VjMVexgVG4C8gN8;no;☑]
 $onlyPerms[manageserver;> :information_source: **You don't have enough permissions.**]
 `
 }
