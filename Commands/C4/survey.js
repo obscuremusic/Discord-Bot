@@ -3,8 +3,7 @@ name:"survey",
 category: "moderation",
 description: "Survey for new members",
 usage: "NaN", 
-code:`
-$image[1;https://cdn.discordapp.com/attachments/889976693102628904/924368955076902972/InShot_20211226_000137242.jpg]
+code:`$image[1;https://cdn.discordapp.com/attachments/889976693102628904/924368955076902972/InShot_20211226_000137242.jpg]
 $color[1;2f3135]
 $title[2;［⎋］︰𝖁erification]
 $description[2;\`\`\`fix
