@@ -1,3 +1,4 @@
+const loadFunction = require("./Functions/Handler/handler.js");
 const variables = require("./variables")
 const aoijs = require('aoi.js');
 
@@ -85,6 +86,12 @@ client2.variables(variables)
 client3.variables(variables)
 client4.variables(variables)
 client5.variables(variables)
+
+loadFunction(client1, "./Functions/Custom");
+loadFunction(client2, "./Functions/Custom");
+loadFunction(client3, "./Functions/Custom");
+loadFunction(client4, "./Functions/Custom");
+loadFunction(client5, "./Functions/Custom");
 
 client1.status({ //enables UMC Custom Bot (1)#5990's client status.
   text: "+help | On Maintainance.",
