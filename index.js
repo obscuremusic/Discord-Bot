@@ -1,11 +1,6 @@
 const loadFunction = require("./Functions/Handler/handler.js");
 const variables = require("./variables")
 const aoijs = require('aoi.js');
-const LavalinkCT1 = new aoijs.Lavalink(client1);
-const LavalinkCT2 = new aoijs.Lavalink(client2);
-const LavalinkCT3 = new aoijs.Lavalink(client3);
-const LavalinkCT4 = new aoijs.Lavalink(client4);
-const LavalinkCT5 = new aoijs.Lavalink(client5);
 
 const client1 = new aoijs.Bot({
    token: process.env['CT1'],
@@ -37,30 +32,39 @@ const client1 = new aoijs.Bot({
    intents: "all"
  });
 
+const LavalinkCT1 = new aoijs.Lavalink(client1);
 LavalinkCT1.addNode({
     url: "lava.link:80",
     password: "lavalink",
     name: "UMC",
     secure: false
 })
+
+const LavalinkCT2 = new aoijs.Lavalink(client2);
 LavalinkCT2.addNode({
     url: "lava.link:80",
     password: "lavalink",
     name: "UMC",
     secure: false
 })
+
+const LavalinkCT3 = new aoijs.Lavalink(client3);
 LavalinkCT3.addNode({
     url: "lava.link:80",
     password: "lavalink",
     name: "UMC",
     secure: false
 })
+
+const LavalinkCT4 = new aoijs.Lavalink(client4);
 LavalinkCT4.addNode({
     url: "lava.link:80",
     password: "lavalink",
     name: "UMC",
     secure: false
 })
+
+const LavalinkCT5 = new aoijs.Lavalink(client5);
 LavalinkCT5.addNode({
     url: "lava.link:80",
     password: "lavalink",
