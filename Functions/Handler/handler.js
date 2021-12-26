@@ -7,5 +7,6 @@ module.exports = (client, path) => {
  if(e) throw e;
  else f.filter(x => x.endsWith(".js"))
  .forEach(file => client.functionManager.createCustomFunction(require(PATH + file)));
+ console.log('Functions loaded.');
  })
 } 
