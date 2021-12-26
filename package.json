@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "aoi.js": "^5.0.7-dev",
+    "aoi.js": "^5.0.7",
     "axios": "^0.24.0",
     "discord.js": "^13.3.1",
     "ffmpeg-static": "^4.4.0",
