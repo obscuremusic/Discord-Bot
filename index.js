@@ -1,6 +1,11 @@
 const loadFunction = require("./Functions/Handler/handler.js");
 const variables = require("./variables")
 const aoijs = require('aoi.js');
+const LavalinkCT1 = new aoijs.Lavalink(client1);
+const LavalinkCT2 = new aoijs.Lavalink(client2);
+const LavalinkCT3 = new aoijs.Lavalink(client3);
+const LavalinkCT4 = new aoijs.Lavalink(client4);
+const LavalinkCT5 = new aoijs.Lavalink(client5);
 
 const client1 = new aoijs.Bot({
    token: process.env['CT1'],
@@ -8,41 +13,17 @@ const client1 = new aoijs.Bot({
    intents: "all"
  });
 
-const LavalinkCT1 = new aoijs.Lavalink(client1);
-LavalinkCT1.addNode({
-    url: "lava.nkno.site:80",
-    password: "LAVA",
-    name: "NKNO",
-    secure: true
-})
- 
  const client2 = new aoijs.Bot({
    token: process.env['CT2'],
    prefix: ["~","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
-
-const LavalinkCT2 = new aoijs.Lavalink(client2);
-LavalinkCT2.addNode({
-    url: "lava.nkno.site:80",
-    password: "LAVA",
-    name: "NKNO",
-    secure: true
-})
  
  const client3 = new aoijs.Bot({
    token: process.env['CT3'],
    prefix: ["%","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
-
-const LavalinkCT3 = new aoijs.Lavalink(client3);
-LavalinkCT3.addNode({
-    url: "lava.nkno.site:80",
-    password: "LAVA",
-    name: "NKNO",
-    secure: true
-})
  
   const client4 = new aoijs.Bot({
    token: process.env['CT4'],
@@ -50,26 +31,41 @@ LavalinkCT3.addNode({
    intents: "all"
  });
 
-const LavalinkCT4 = new aoijs.Lavalink(client4);
-LavalinkCT4.addNode({
-    url: "lava.nkno.site:80",
-    password: "LAVA",
-    name: "NKNO",
-    secure: true
-})
- 
   const client5 = new aoijs.Bot({
    token: process.env['CT5'],
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
 
-const LavalinkCT5 = new aoijs.Lavalink(client5);
+LavalinkCT1.addNode({
+    url: "lava.link:80",
+    password: "lavalink",
+    name: "UMC",
+    secure: false
+})
+LavalinkCT2.addNode({
+    url: "lava.link:80",
+    password: "lavalink",
+    name: "UMC",
+    secure: false
+})
+LavalinkCT3.addNode({
+    url: "lava.link:80",
+    password: "lavalink",
+    name: "UMC",
+    secure: false
+})
+LavalinkCT4.addNode({
+    url: "lava.link:80",
+    password: "lavalink",
+    name: "UMC",
+    secure: false
+})
 LavalinkCT5.addNode({
-    url: "lava.nkno.site:80",
-    password: "LAVA",
-    name: "NKNO",
-    secure: true
+    url: "lava.link:80",
+    password: "lavalink",
+    name: "UMC",
+    secure: false
 })
 
 //Callbacks
