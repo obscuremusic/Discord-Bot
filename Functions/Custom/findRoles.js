@@ -1,6 +1,7 @@
 module.exports = {
 name:"$findRoles",
 type:"djs",
+usage: "$findRoles[value]",
 code: async(d)=>{
 const data = d.util.openFunc(d); 
 const [query,limit=10,type="startsWith", seperator="\n"] = data.inside.splits;
