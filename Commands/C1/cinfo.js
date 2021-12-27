@@ -10,6 +10,7 @@ $addField[1;Description;\`\`\`fix\n$commandInfo[$message[1];description]\`\`\`;n
 $addField[1;Usage;\`\`\`fix\n$commandInfo[$message[1];usage]\`\`\`;yes]
 $addField[1;Aliases;\`\`\`fix\n$replaceText[$commandInfo[$message[1];aliases];,; | ]\`\`\`;yes]
 $addField[1;Category;\`\`\`fix\n$commandInfo[$message[1];category]\`\`\`;yes]
+$image[1;https://cdn.discordapp.com/attachments/590020114234081280/759371484287860766/20200926_164101.jpg]
 $footer[1;Requested by $username[$authorID]]
 $color[1;000000]
 $onlyIf[$commandInfo[$message[1];name]!=;> :negative_squared_cross_mark: **Command was not found in the database.**]
