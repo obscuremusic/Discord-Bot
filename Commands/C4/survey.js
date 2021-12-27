@@ -13,4 +13,11 @@ $color[2;2f3135]
 $addbutton[1;Form Submit;5;https://forms.gle/L8VjMVexgVG4C8gN8;no;<:icon_gforms:924389619326402581>]
 $addbutton[1;Discord Survey;1;verify_vd;no;<:icon_discord:924389666495557693>]
 $onlyPerms[manageserver;> :information_source: **You don't have enough permissions.**]`
+},{
+  name:"verify_vd",
+  type:"interaction",
+  prototype:"button",
+  code:`$interactionReply[> :white_chech_mark: **Your application has been created at <#$get[ticketchannel]>.**:;;;;yes]
+  $let[ticketchannel;$newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]
+`
 }]
