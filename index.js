@@ -79,6 +79,7 @@ client3.onMessage()
 client4.onMessage() 
 client4.onJoin()
 client4.onLeave()
+client4.onInteractionCreate()
 client5.onMessage() 
 
 client1.variables(variables)
