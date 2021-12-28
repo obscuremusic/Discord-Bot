@@ -8,7 +8,7 @@ code:`$author[1;QR code Generated (360x360);https://cdn.discordapp.com/attachmen
 $description[1;**[Image Link](https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=$replaceText[$message; ;%20]) | [QR Service](https://qrserver.com)**
 \`\`\`fix
 $message\`\`\`]
-$image[1;https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=$uri[encode;$message]]
+$image[1;https://api.qrserver.com/v1/create-qr-code/?size=360x360&data=$uri[$message;encode]]
 $color[1;2f3135]
 $footer[1;Source - qrserver.com | $argsCount words.]
 $onlyIf[$message!=;> :information_:**You need to provide a text!**]`
