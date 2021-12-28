@@ -18,5 +18,5 @@ $onlyPerms[manageserver;> :information_source: **You don't have enough permissio
   type: 'interaction',
   prototype: 'button',
   code:`
-  $let[ticketchannel;$newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]`
+  ok`
 }]
