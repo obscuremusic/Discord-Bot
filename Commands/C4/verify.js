@@ -9,6 +9,7 @@ $onlyIf[$isUserDMEnabled[$findMember[$message[1]]]==true;> :information_source: 
 $closeTicket[> :information_source: **This is not the ticket channel.**]
 $sendMessage[> :white_check_mark: **$username[$findMember[$message[1]]]#$discriminator[$findMember[$message[1]]] was given access to the server.** ;no]
 $giveRole[$guildID;$findMember[$message[1]];$getServerVar[membershiprole]]
+$onlyIf[$isTicket==true;> :negative_squared_cross_mark: **This is not the application channel.**]
 $onlyIf[$findMember[$message[1]]!=$authorID;> :negative_squared_cross_mark: **User not found, invalid Username / User ID.**]
 $onlyPerms[kick;> :information_source: **You don't have enough permissions.**]
 $let[validationID;$randomString[8]]
