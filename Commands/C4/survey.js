@@ -18,6 +18,6 @@ $onlyPerms[manageserver;> :information_source: **You don't have enough permissio
   type: 'interaction',
   prototype: 'button',
   code:`$interactionReply[> :information_source: **Your application was successfully created at <#$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes]>.**]
-  $channelSendMessage[$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes];;no]
+  $channelSendMessage[$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes];ok;no]
   $newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]`
 }]
