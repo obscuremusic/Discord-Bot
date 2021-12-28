@@ -20,6 +20,5 @@ $onlyPerms[manageserver;> :information_source: **You don't have enough permissio
   prototype: 'button',
   code:`
   $channelSendMessage[$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes];;no]
-  $newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]
-  $cooldown[2h;]`
+  $newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]`
 }]
