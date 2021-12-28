@@ -3,7 +3,8 @@ name: "survey",
 category: "moderation",
 description: "Survey for new members",
 usage: "NaN", 
-code:`$image[1;https://cdn.discordapp.com/attachments/889976693102628904/924368955076902972/InShot_20211226_000137242.jpg]
+code:`$interactionReply[> :information_source: **Your application was successfully created at <#$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes]>.**;;;;yes]
+$image[1;https://cdn.discordapp.com/attachments/889976693102628904/924368955076902972/InShot_20211226_000137242.jpg]
 $color[1;2f3135]
 $author[2;Community Verification System;https://cdn.discordapp.com/attachments/889976693102628904/925019526909796362/20211227_190655.png]
 $description[2;\`\`\`fix
@@ -17,7 +18,7 @@ $onlyPerms[manageserver;> :information_source: **You don't have enough permissio
   name: "verify_vd",
   type: 'interaction',
   prototype: 'button',
-  code:`$interactionReply[> :information_source: **Your application was successfully created at <#$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes]>.**;;;;yes]
+  code:`
   $channelSendMessage[$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes];;no]
   $newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]
   $cooldown[2h;]`
