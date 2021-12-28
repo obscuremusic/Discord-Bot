@@ -1,5 +1,5 @@
 module.exports = [{
-name:"survey",
+name: "survey",
 category: "moderation",
 description: "Survey for new members",
 usage: "NaN", 
@@ -14,10 +14,9 @@ $addbutton[1;Form Submit;5;https://forms.gle/L8VjMVexgVG4C8gN8;no;<:icon_gforms:
 $addbutton[1;Discord Survey;1;verify_vd;no;<:icon_discord:924389666495557693>]
 $onlyPerms[manageserver;> :information_source: **You don't have enough permissions.**]`
 },{
-  name:"verify_vd",
-  type:"interaction",
-  prototype:"button",
+  name: "verify_vd",
+  type: 'interaction',
+  prototype: 'button',
   code:`
-  $let[ticketchannel;$newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]
-`
+  $let[ticketchannel;$newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];yes;]`
 }]
