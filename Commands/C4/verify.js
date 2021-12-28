@@ -11,5 +11,6 @@ $sendMessage[> :white_check_mark: **$username[$findMember[$message[1]]]#$discrim
 $giveRole[$guildID;$findMember[$message[1]];$getServerVar[membershiprole]]
 $onlyIf[$findMember[$message[1]]!=$authorID;> :negative_squared_cross_mark: **User not found, invalid Username / User ID.**]
 $onlyPerms[kick;> :information_source: **You don't have enough permissions.**]
-$let[validationID;$randomString[8]]`
+$let[validationID;$randomString[8]]
+$suppressErrors[> :information_source: **Something went wrong, manually check if the survey channel was deleted or if they have recieved access.**]`
 }
