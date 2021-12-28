@@ -18,8 +18,8 @@ $onlyPerms[manageserver;> :information_source: **You don't have enough permissio
   type: 'interaction',
   prototype: 'button',
   code:`$interactionReply[> :information_source: **Your application was successfully created at <#$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes]>.**;;;;yes]
-  $channelSendMessage[$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes];{newEmbed:{author:Application started:https://cdn.discordapp.com/attachments/889976693102628904/925019526909796362/20211227_190655.png}{description:\`\`\`diff\r\n+) Read the community guidelines before you proceed.\r\n+) Responses should be concise and well formatted.\r\n+) Open a ticket if you face any problems with the survey.\r\n\`\`\`\r\n\`\`\`diff\r\n-) You should not submit the form more than once.\r\n-) You should be serious with your responses.\r\n-) You should not take more than 10 minutes to answer.\r\n\`\`\`}{footer:Select Confirm to continue or Cancel to delete the form.}{color:000001}{{actionRow:{button:Confirm:3:confirm_vd:false}{button:Cancel:4:cancel_vd:false}}}};no]
+  $channelSendMessage[$findChannel[➥・［⎋］﹕$username[$findMember[$message[1]]]．;yes];This feature is under construction, please submit a form;no]
   $wait[1s]
-  $newTicket[➥・［⎋］﹕$username[$authorID]．;;$getServerVar[verifycategory];no;]
+  $newTicket[➥・［⎋］﹕$username[$authorID]．;{newEmbed:{author:Application started:https://cdn.discordapp.com/attachments/889976693102628904/925019526909796362/20211227_190655.png}{description:\`\`\`diff\r\n+) Read the community guidelines before you proceed.\r\n+) Responses should be concise and well formatted.\r\n+) Open a ticket if you face any problems with the survey.\r\n\`\`\`\r\n\`\`\`diff\r\n-) You should not submit the form more than once.\r\n-) You should be serious with your responses.\r\n-) You should not take more than 10 minutes to answer.\r\n\`\`\`}{footer:Select Confirm to continue or Cancel to delete the form.}{color:000001}{{actionRow:{button:Confirm:3:confirm_vd:false}{button:Cancel:4:cancel_vd:false}}}};$getServerVar[verifycategory];no;]
   $cooldown[5m]`
 }]
