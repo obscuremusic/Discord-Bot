@@ -1,7 +1,7 @@
 module.exports = {
 name: "$transcript",
 type: "djs",
-usage: "$files[directory(optional);separator(optional)]",
+usage: "$$transcript",
 code: async d => {
 const data = d.util.openFunc(d)
 const discordTranscripts = require('discord-html-transcripts');
