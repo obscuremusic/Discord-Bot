@@ -2,31 +2,31 @@ const loadFunction = require("./Functions/Handler/handler.js");
 const variables = require("./variables")
 const Discord = require('aoi.js');
 
-const client1 = new Discord.Bot({
+const client1 = global.C1 = new Discord.Bot({
    token: process.env['CT1'],
    prefix: ["+","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
 
- const client2 = new Discord.Bot({
+ const client2 = global.C2 = new Discord.Bot({
    token: process.env['CT2'],
    prefix: ["~","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
- const client3 = new Discord.Bot({
+ const client3 = global.C3 = new Discord.Bot({
    token: process.env['CT3'],
    prefix: ["%","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
  
-  const client4 = new Discord.Bot({
+  const client4 = global.C4 = new Discord.Bot({
    token: process.env['CT4'],
    prefix: ["-","<@$clientID>","<@!$clientID>"],
    intents: "all"
  });
 
-  const client5 = new Discord.Bot({
+  const client5 = global.C5 = new Discord.Bot({
    token: process.env['CT5'],
    prefix: ["=","<@$clientID>","<@!$clientID>"],
    intents: "all"
