@@ -8,8 +8,8 @@ code:`$djsEval[(async () => {
 const discordjs = require('discord.js');
 const simplydjs = require('simply-djs');
 simplydjs.calculator(message, {
-  embedColor: "#075FFF",
-  credit: "false"
+  embedColor: "#5865F2",
+  credit: false
 })
 })()]`
 }
