@@ -9,8 +9,11 @@ code:`
 
 $if[$message==Youtube;Error]
  Starting Youtube $djseval[
+ const client = new aoijs.Bot({
+   token: process.env['CT1']
+   intents: "all"
+ })
 const { DiscordTogether } = require('discord-together');
-
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'youtube').then(async invite => {
  return message.channel.send(invite.code);
@@ -21,6 +24,7 @@ $if[$message==Poker;Error]
 Starting Poker $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -33,6 +37,7 @@ $if[$message==Betrayal;Error]
 Starting Betrayal $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -45,6 +50,7 @@ $if[$message==Chess;Error]
 Starting Chess $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -57,6 +63,7 @@ client.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invite
  Starting Fishington $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -69,6 +76,7 @@ client.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async invi
 Starting Letter tile $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -81,6 +89,7 @@ client.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async i
 Starting Word snack $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -93,6 +102,7 @@ client.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async in
 Starting Doodle crew $djseval[
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -106,6 +116,7 @@ Starting Spell cast $djseval[
 const aoijs = require('aoi.js');
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -119,6 +130,7 @@ Starting Awkword $djseval[
 const aoijs = require('aoi.js');
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
@@ -132,6 +144,7 @@ Starting putty party $djseval[
 const aoijs = require('aoi.js');
 const client = new aoijs.Bot({
    token: process.env['CT1']
+   intents: "all"
  })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
