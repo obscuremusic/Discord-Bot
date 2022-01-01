@@ -6,7 +6,7 @@ const discordjs = require('discord.js');
 const simplydjs = require('simply-djs');
 simplydjs.chatbot(client, message, {
   chid: "$getServerVar[chatbotchannel]",
-  name: "chatbot",
+  name: "UMC chatbot",
   developer: "Lethiferal"
 })
 })()]
