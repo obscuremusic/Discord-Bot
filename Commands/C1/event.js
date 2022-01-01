@@ -11,8 +11,8 @@ $if[$message==Youtube;Error]
  Starting Youtube $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'youtube').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'youtube').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -21,8 +21,8 @@ $if[$message==Poker;Error]
 Starting Poker $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'poker').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'poker').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -31,8 +31,8 @@ $if[$message==Betrayal;Error]
 Starting Betrayal $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'betrayal').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'betrayal').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -41,8 +41,8 @@ $if[$message==Chess;Error]
 Starting Chess $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invite => {
  return message.channel.send(invite.code);
  });
  ] 
@@ -51,8 +51,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invit
  Starting Fishington $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -61,8 +61,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async inv
 Starting Letter tile $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -71,8 +71,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async 
 Starting Word snack $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -81,8 +81,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async i
 Starting Doodle crew $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'doodlecrew').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'doodlecrew').then(async invite => {
  return message.channel.send(invite.code);
  });
  ] 
@@ -91,8 +91,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'doodlecrew').then(async 
 Starting Spell cast $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'spellcast').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'spellcast').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -101,8 +101,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'spellcast').then(async i
 Starting Awkword $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'awkword').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'awkword').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
@@ -111,8 +111,8 @@ client1.discordTogether.createTogetherCode('$voiceID', 'awkword').then(async inv
 Starting putty party $djseval[
 const { DiscordTogether } = require('discord-together');
 
-client1.discordTogether = new DiscordTogether(client1);
-client1.discordTogether.createTogetherCode('$voiceID', 'puttyparty').then(async invite => {
+client.discordTogether = new DiscordTogether(client1);
+client.discordTogether.createTogetherCode('$voiceID', 'puttyparty').then(async invite => {
  return message.channel.send(invite.code);
  });
  ]
