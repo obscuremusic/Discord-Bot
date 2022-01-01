@@ -6,8 +6,8 @@ usage: "+calculator",
 aliases:["cal","calculate"],
 code:`$djsEval[
 const client = require('../../index.js')
-const simplydjs = require("simply-djs");
-simplydjs.calculator(client1, message, {
+const simplydjs = require("simply-djs")
+simplydjs.calculator(message, {
   embedColor: "#075FFF"
   credit: "false"
 });
