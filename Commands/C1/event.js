@@ -6,13 +6,8 @@ usage: "+event <type>",
 aliases:["party"],
 code:`
  $onlyif[$message!=;> :information_source: **Choose event to host - \`Youtube\` | \`Poker\` | \`Betrayal\` | \`Chess\` | \`Fishington\` | \`Lettertile\` | \`Wordsnack\` | \`Doodlecrew\` | \`Spellcast\` | \`Awkword\` | \`Puttyparty\`.**]
-
 $if[$message==Youtube;Error]
  Starting Youtube $djseval[
- const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'youtube').then(async invite => {
@@ -22,10 +17,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'youtube').then(async invi
 $endif
 $if[$message==Poker;Error]
 Starting Poker $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'poker').then(async invite => {
@@ -35,10 +26,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'poker').then(async invite
 $endif
 $if[$message==Betrayal;Error]
 Starting Betrayal $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'betrayal').then(async invite => {
@@ -48,10 +35,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'betrayal').then(async inv
  $endif
 $if[$message==Chess;Error]
 Starting Chess $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invite => {
@@ -61,10 +44,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invite
  $endif
  $if[$message==Fishington;Error]
  Starting Fishington $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async invite => {
@@ -74,10 +53,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async invi
  $endif
  $if[$message==Lettertile;Error]
 Starting Letter tile $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async invite => {
@@ -87,10 +62,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async i
  $endif
  $if[$message==Wordsnack;Error]
 Starting Word snack $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async invite => {
@@ -100,10 +71,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async in
  $endif
  $if[$message==Doodlecrew;Error]
 Starting Doodle crew $djseval[
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'doodlecrew').then(async invite => {
@@ -113,11 +80,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'doodlecrew').then(async i
  $endif
  $if[$message==Spellcast;error]
 Starting Spell cast $djseval[
-const aoijs = require('aoi.js');
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'spellcast').then(async invite => {
@@ -127,11 +89,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'spellcast').then(async in
  $endif
  $if[$message==Awkword;Error]
 Starting Awkword $djseval[
-const aoijs = require('aoi.js');
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'awkword').then(async invite => {
@@ -141,11 +98,6 @@ client.discordTogether.createTogetherCode('$voiceID', 'awkword').then(async invi
  $endif
  $if[$message==Puttyparty;error]
 Starting putty party $djseval[
-const aoijs = require('aoi.js');
-const client = new aoijs.Bot({
-   token: process.env['CT1']
-   intents: "all"
- })
 const { DiscordTogether } = require('discord-together');
 client.discordTogether = new DiscordTogether(client);
 client.discordTogether.createTogetherCode('$voiceID', 'puttyparty').then(async invite => {
