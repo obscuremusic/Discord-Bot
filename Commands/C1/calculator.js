@@ -5,8 +5,9 @@ description: "An handy button Calculator.",
 usage: "+calculator", 
 aliases:["cal","calculate"],
 code:`$djsEval[
+const discordjs = require('discord.js')
+const simplydjs = require('simply-djs')
 const client = global.C1
-const simplydjs = require("simply-djs")
 simplydjs.calculator(message, {
   embedColor: "#075FFF"
   credit: "false"
