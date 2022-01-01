@@ -3,7 +3,7 @@ name:"meme",
 category: "misc",
 description: "Gives you soomething to laugh at.",
 usage: "+meme", 
-aliases:["shitpost","trashpost","dankmeme"],
+aliases:["shitpost","trashpost","memes"],
 code:`$djsEval[(async () => {
 const discordjs = require('discord.js');
 const simplydjs = require('simply-djs');
