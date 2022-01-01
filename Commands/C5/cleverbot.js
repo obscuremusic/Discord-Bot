@@ -6,7 +6,5 @@ simplydjs.chatbot(client, message, {
  name: "UMC Chatbot"
  developer: "Lethiferal"
 });]
-$reply[$messageID;no]
-$botTyping
-$onlyIf[$channelID==$getServerVar[chatbotchannel];]`
+$reply[$messageID;no]`
 }
