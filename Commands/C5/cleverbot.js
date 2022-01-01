@@ -1,7 +1,15 @@
 module.exports ={
 name:"$alwaysExecute",
-code:`$replaceText[$jsonRequest[https://api.affiliateplus.xyz/api/chatbot?message=$message&botname=UMC%20ChatBot&ownername=Lethiferal&build=beta&celebrity=Varg+Vikernes&city=Kolkata&country=India&email=none&company=UMC&favoriteband=Navjarmaahr&favoritecolor=black&favoriteseason=winter&favoritesong=Beyond+Tears+by+Oppressive+Light&kindmusic=black+metal&location=Server+Farm&user=$authorID;message;> :information_source: **An error occured**];$authorID;$username[$authorID]]
-$reply[$messageID;no]
+code:`
+$djsEval[(async () => {
+const discordjs = require('discord.js');
+const simplydjs = require('simply-djs');
+simplydjs.chatbot(client, message, {
+  chid: "$getServerVar[chatbotchannel]",
+  name: "chatbot",
+  developer: "Lethiferal"
+})
+})()]
 $botTyping
 $onlyIf[$channelID==$getServerVar[chatbotchannel];]`
 }
