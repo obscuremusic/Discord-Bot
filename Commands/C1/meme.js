@@ -9,6 +9,7 @@ const discordjs = require('discord.js');
 const simplydjs = require('simply-djs');
 simplydjs.automeme(client, {
   chid: "$channelID",
+  subReddits: ["Audiomemes","ProducerCircleJerk"],
   embedColor: "#2F3135"
 });
 })()]`
