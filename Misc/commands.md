@@ -4,6 +4,8 @@
 - `+ping` - Shows the bot latency.
 - `+stats` - Shows the bot stats.
 - `+qrcode` - Returns QR code of the given text.
+- `+event` - Host an event in a VC.
+- `+shorten` - Shorten a valid link.
 
 ------------
 
@@ -37,4 +39,4 @@
 ------------
 
 This page is not updated immidiately and may not contain a few commands.
-Last updated : 2021-12-19 01:21:00 Sunday
+Last updated : NaN
