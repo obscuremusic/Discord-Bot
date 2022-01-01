@@ -11,6 +11,6 @@ simplydjs.automeme(client, {
   chid: "$channelID",
   subReddits: ["Audiomemes","ProducerCircleJerk"],
   embedColor: "#2F3135"
-});
+})
 })()]`
 }
