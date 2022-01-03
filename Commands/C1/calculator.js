@@ -18,5 +18,5 @@ await Calculator({
     invalidQuery: 'The provided equation is invalid!',
     othersMessage: 'Only <@{{author}}> can use the buttons!',
 })
-})()]`
+})]`
 }
