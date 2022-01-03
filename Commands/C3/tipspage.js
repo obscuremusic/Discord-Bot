@@ -4,7 +4,7 @@ category: "Production",
 description: "A useful tips paginator.",
 usage: "%tips", 
 aliases:["tip","tricks","cheats","cheatsheet"],
-code:`$djsEval[
+code:`$djsEval[(async () => {
 const discordjs = require('discord.js');
 const simplydjs = require('simply-djs');
 
@@ -45,5 +45,6 @@ simplydjs.embedPages(client, message, pages, {
 
   skipBtn: true,
   delBtn: true
-})]`
+})
+})()]`
 }
