@@ -1,20 +1,10 @@
-# UMC-Server-bot
-**Custom bot for the Underground Music Community discord server.**
+### Underground Music Community Discord Bot
 
 ------------
 
-**Template command for upcoming contributors.**
-
-```javascript
-module.exports ={
-name:"command",
-category: "template",
-description: "Template for command,",
-usage: "<enter usage>", 
-aliases:["template","code"],
-code:`Enter code here`
-}
-```
+##### Custom bot made for the Underground Music Community Discord server. If you are willing to contribute to the project, please open a ticket in our discord server.
 
 ------------
+[![Discord Server](https://discord.io/undergroundmusic/badge "Discord Server")](http://https://discord.io/undergroundmusic "Discord Server") [![Issues](https://img.shields.io/github/issues/lethiferal/UMC-Server-bot?style=for-the-badge "Issues")](http://https://github.com/lethiferal/UMC-Server-bot/issues "Issues") [![GitHub stars](https://img.shields.io/github/stars/lethiferal/UMC-Server-bot?style=for-the-badge)](https://github.com/lethiferal/UMC-Server-bot/stargazers) ![GitHub watchers](https://img.shields.io/github/watchers/lethiferal/UMC-Server-bot?style=for-the-badge)
 
+------------
