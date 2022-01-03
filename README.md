@@ -1,4 +1,4 @@
-### Underground Music Community Discord Bot
+## Underground Music Community Discord Bot
 
 ------------
 
