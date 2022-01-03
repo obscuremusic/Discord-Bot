@@ -14,8 +14,8 @@ await Calculator({
         footer: ' ',
         timestamp: false,
     },
-    disabledQuery: 'Calculator is disabled!',
-    invalidQuery: 'The provided equation is invalid!',
+    disabledQuery: 'Calculator has been disabled successfully.',
+    invalidQuery: 'The provided equation is invalid.',
     othersMessage: 'Only <@{{author}}> can use the buttons!',
 })
 })()]`
