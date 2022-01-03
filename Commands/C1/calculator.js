@@ -16,7 +16,7 @@ await Calculator({
     },
     disabledQuery: 'Calculator has been disabled successfully.',
     invalidQuery: 'The provided equation is invalid.',
-    othersMessage: 'Only <@{{author}}> can use the buttons!',
+    othersMessage: ':informatioon_source: **Only <@{{author}}> can use the buttons!**',
 })
 })()]`
 }
