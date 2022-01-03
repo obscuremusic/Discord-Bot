@@ -9,14 +9,14 @@ async () => {
 await Calculator({
     message: message,
     embed: {
-        title: '\u2800,
+        title: 'Calculator',
         color: '#2f3135',
-        footer: '\u2800',
+        footer: 'v13.0.0',
         timestamp: false,
     },
     disabledQuery: 'Calculator is disabled!',
     invalidQuery: 'The provided equation is invalid!',
     othersMessage: 'Only <@{{author}}> can use the buttons!',
-});
+})
 })();]`
 }
