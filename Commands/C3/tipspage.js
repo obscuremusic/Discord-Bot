@@ -27,7 +27,7 @@ let embed2 = new discordjs.MessageEmbed()
 		{ name: 'Major keys', value: 'fig. 1.1', inline: true },
 		{ name: 'Minor keys', value: 'fig. 1.2', inline: true },
 	),
-	.setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
+	.setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg'),
 	.setFooter('Source - musicnotes.com | \u25CB\u25CF');
 
 let pages = [embed1, embed2];
