@@ -12,11 +12,11 @@ await Calculator({
         title: '\u2800,
         color: '#2f3135',
         footer: '\u2800',
-        timestamp: false
+        timestamp: false,
     },
     disabledQuery: 'Calculator is disabled!',
     invalidQuery: 'The provided equation is invalid!',
-    othersMessage: 'Only <@{{author}}> can use the buttons!'
+    othersMessage: 'Only <@{{author}}> can use the buttons!',
 });
 })();]`
 }
