@@ -1,6 +1,6 @@
  module.exports = [{
-    name:"tips",
-    aliases:["tip","cheats","cheat"],
+    name:"tipsdep",
+    aliases:["tipdep","cheatsdep","cheatdep"],
     code:`$sendMessage[{execute:progression};no]
     $sendMessage[{execute:guitarchord};no]
     $let[tip;$random[1;2;no]]`
