@@ -9,9 +9,9 @@ const { Calculator } = require('weky');
 await Calculator({
     message: message,
     embed: {
-        title: 'Calculator',
+        title: ' ',
         color: '#2f3135',
-        footer: 'v13.0.0',
+        footer: ' ',
         timestamp: false
     },
     disabledQuery: 'Calculator is disabled!',
