@@ -4,8 +4,8 @@ category: "utility",
 description: "An handy button Calculator.",
 usage: "+calculator", 
 aliases:["cal","calculate"],
-code:`$djsEval[async () => {
-const { Calculator } = require('weky');
+code:`$djsEval[const { Calculator } = require('weky');
+async () => {
 await Calculator({
     message: message,
     embed: {
