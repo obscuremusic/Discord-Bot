@@ -4,9 +4,7 @@ category: "utility",
 description: "An handy button Calculator.",
 usage: "+calculator", 
 aliases:["cal","calculate"],
-code:`$djsEval[
-const discordjs = require('discord.js');
-const { Calculator } = require('weky');
+code:`$djsEval[const { Calculator } = require('weky');
 Calculator({
     message: message,
     embed: {
