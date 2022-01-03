@@ -7,7 +7,6 @@ aliases:["cal","calculate"],
 code:`$djsEval[(async () => {
 const discordjs = require('discord.js');
 const { Calculator } = require('weky');
-const { Calculator } = require("weky");
 await Calculator({
     message: message,
     embed: {
