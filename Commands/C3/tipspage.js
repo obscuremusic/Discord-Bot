@@ -30,7 +30,7 @@ let embed2 = new discordjs.MessageEmbed()
 	.setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
 	.setFooter('Source - musicnotes.com | \u25CB\u25CF');
 
-let pages = [embed1, embed2]
+let pages = [embed1, embed2];
 
 simplydjs.embedPages(client, message, pages, {
   firstEmoji: "927629391129903154",
@@ -44,7 +44,7 @@ simplydjs.embedPages(client, message, pages, {
   skipcolor: "primary",
 
   skipBtn: true,
-  delBtn: true
+  delBtn: true,
 })
 })()]`
 }
