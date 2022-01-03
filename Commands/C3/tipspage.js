@@ -8,8 +8,6 @@ code:`$djsEval[(async () => {
 const discordjs = require('discord.js');
 const simplydjs = require('simply-djs');
 
-
-
 let embed1 = new Discord.MessageEmbed()
 	.setColor('#2f3135')
 	.setAuthor('Music Theory Advice', 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png')
@@ -48,5 +46,5 @@ simplydjs.embedPages(client, message, pages, {
   skipBtn: true,
   delBtn: true
 })
-})()]`
+})())]`
 }
