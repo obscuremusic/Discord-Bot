@@ -4,8 +4,8 @@ category: "utility",
 description: "An handy button Calculator.",
 usage: "+calculator", 
 aliases:["cal","calculate"],
-code:`$djsEval[const { Calculator } = require('weky');
-async () => {
+code:`$djsEval[async () => {
+const { Calculator } = require('weky');
 await Calculator({
     message: message,
     embed: {
@@ -18,5 +18,5 @@ await Calculator({
     invalidQuery: 'The provided equation is invalid!',
     othersMessage: 'Only <@{{author}}> can use the buttons!',
 })
-})();]`
+})()]`
 }
