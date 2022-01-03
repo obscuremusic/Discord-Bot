@@ -6,10 +6,19 @@ usage: "+calculator",
 aliases:["cal","calculate"],
 code:`$djsEval[(async () => {
 const discordjs = require('discord.js');
-const simplydjs = require('simply-djs');
-simplydjs.calculator(message, {
-  embedColor: "#2f3135",
-  credit: false
-})
+const { Calculator } = require('weky');
+const { Calculator } = require("weky");
+await Calculator({
+    message: message,
+    embed: {
+        title: '\u2800,
+        color: '#2f3135',
+        footer: '\u2800',
+        timestamp: false
+    },
+    disabledQuery: 'Calculator is disabled!',
+    invalidQuery: 'The provided equation is invalid!',
+    othersMessage: 'Only <@{{author}}> can use the buttons!'
+});
 })()]`
 }
