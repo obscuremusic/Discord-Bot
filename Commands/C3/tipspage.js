@@ -45,5 +45,5 @@ simplydjs.embedPages(client, message, pages, {
 
   skipBtn: true,
   delBtn: true
-}))]`
+})]`
 }
