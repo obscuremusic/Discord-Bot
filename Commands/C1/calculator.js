@@ -4,7 +4,7 @@ category: "utility",
 description: "An handy button Calculator.",
 usage: "+calculator", 
 aliases:["cal","calculate"],
-code:`$djsEval[(async () => {
+code:`
 const discordjs = require('discord.js');
 const { Calculator } = require('weky');
 await Calculator({
@@ -18,6 +18,5 @@ await Calculator({
     disabledQuery: 'Calculator is disabled!',
     invalidQuery: 'The provided equation is invalid!',
     othersMessage: 'Only <@{{author}}> can use the buttons!'
-});
-})()]`
+});]`
 }
