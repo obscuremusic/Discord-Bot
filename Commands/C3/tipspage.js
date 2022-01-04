@@ -10,10 +10,10 @@ const { MessageEmbed } = require('discord.js');
 const simplydjs = require('simply-djs');
 
 let tip1 = new MessageEmbed()
-  .setTitle("Paginator page 1");
+  .setAuthor({ name: 'Music Theory Advice', iconURL: 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png'})
 
 let tip2 = new MessageEmbed()
-  .setTitle("Paginator page 2");
+  .setAuthor({ name: 'Music Theory Advice', iconURL: 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png'})
 
 let pages = [tip1, tip2];
 
