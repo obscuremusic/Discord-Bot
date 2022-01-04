@@ -11,15 +11,15 @@ const simplydjs = require('simply-djs');
 
 let tip1 = new MessageEmbed()
   .setAuthor({ name: 'Music Theory Advice', iconURL: 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png'})
-  .setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
-  .setFooter('Source - musicnotes.com \u007C \u25CF\u25CB')
+  .setImage('https://cdn.discordapp.com/attachments/759477502640521226/927616898336706662/InShot_20220103_230425902.jpg')
+  .setFooter('Source - Lethiferal \u007C \u25CF\u25CB')
   .setColor('#2f3135');
   
   
 let tip2 = new MessageEmbed()
   .setAuthor({ name: 'Music Theory Advice', iconURL: 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png'})
-  .setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
-  .setFooter('Source - musicnotes.com \u007C \u25CB\u25CF')
+  .setImage('https://cdn.discordapp.com/attachments/759477502640521226/927616898336706662/InShot_20220103_230425902.jpg')
+  .setFooter('Source - Lethiferal \u007C \u25CB\u25CF')
   .setColor('#2f3135');
   
 let pages = [tip1, tip2];
