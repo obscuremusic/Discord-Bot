@@ -9,11 +9,11 @@ const { Snake } = require('weky');
 await Snake({
 	message: message,
 	embed: {
-		title: 'Snake | Weky Development',
-		description: 'GG, you scored **{{score}}** points!',
+		title: 'Snake Minigame',
+		description: 'You scored **{{score}}** points!',
 		color: '#5865F2',
-        footer: '©️ Weky Development',
-		timestamp: true
+        footer: 'Use the arrows to move.',
+		timestamp: false
 	},
 	emojis: {
 		empty: '⬛',
@@ -25,7 +25,7 @@ await Snake({
 		left: '➡️',
 	},
 	othersMessage: 'Only <@{{author}}> can use the buttons!',
-	buttonText: 'Cancel'
+	buttonText: '⛌'
 })
 })()]`
 }
