@@ -44,7 +44,7 @@ simplydjs.embedPages(client, message, pages, {
   skipcolor: "primary",
 
   skipBtn: true,
-  delBtn: true,
+  delBtn: true
 })
 })()]`
 }
