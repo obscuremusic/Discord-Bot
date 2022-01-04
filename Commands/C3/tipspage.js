@@ -8,7 +8,11 @@ code:`$djsEval[(async () => {
 const { MessageEmbed } = require('discord.js');
 const simplydjs = require('simply-djs');
 
-let pages = ['tip1', 'tip2']
+let tip1 = new Discord.MessageEmbed().setTitle("Page 1");
+
+let tip2 = new Discord.MessageEmbed().setTitle("Page 2");
+
+let pages = [tip1, tip2]
 
 simplydjs.embedPages(client, message, pages, {
   firstEmoji: "927629391129903154",
