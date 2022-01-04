@@ -5,6 +5,7 @@ description: "A useful tips paginator.",
 usage: "%tips", 
 aliases:["tip","tricks","cheats","cheatsheet"],
 code:`$djsEval[(async () => {
+
 const { MessageEmbed } = require('discord.js');
 const simplydjs = require('simply-djs');
 
