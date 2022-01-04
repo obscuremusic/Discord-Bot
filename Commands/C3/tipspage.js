@@ -9,9 +9,9 @@ code:`$djsEval[(async () => {
 const { MessageEmbed } = require('discord.js');
 const simplydjs = require('simply-djs');
 
-let tip1 = MessageEmbed().setTitle("Paginator page 1");
+let tip1 = new MessageEmbed().setTitle("Paginator page 1");
 
-let tip2 = MessageEmbed().setTitle("Paginator page 2");
+let tip2 = new MessageEmbed().setTitle("Paginator page 2");
 
 let pages = [tip1, tip2];
 
