@@ -17,10 +17,6 @@ simplydjs.embedPages(client, message, pages, {
   forwardEmoji: "927629508096454717",
   lastEmoji: "927629535850143855",
 
-  btncolor: "primary",
-  delcolor: "secondary",
-  skipcolor: "primary",
-
   skipBtn: true,
   delBtn: true
 })
