@@ -17,7 +17,7 @@ let tip1 = new MessageEmbed()
         { name: 'Minor keys', value: 'fig. 1.2', inline: true },
     )
     .setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
-    .setFooter('Source - musicnotes.com | \u25CF\u25CB');
+    .setFooter('Source - musicnotes.com \u007C \u25CF\u25CB');
 
 let tip2 = new MessageEmbed()
     .setColor('#2f3135')
@@ -28,7 +28,7 @@ let tip2 = new MessageEmbed()
         { name: 'Minor keys', value: 'fig. 1.2', inline: true },
     )
     .setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
-    .setFooter('Source - musicnotes.com | \u25CF\u25CB');
+    .setFooter('Source - musicnotes.com \u007C \u25CF\u25CB');
 
 let pages = [tip1, tip2];
 
