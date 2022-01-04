@@ -30,7 +30,7 @@ let tip2 = new MessageEmbed()
     .setImage('https://cdn.discordapp.com/attachments/889976693102628904/921374821542166528/20211217_174418.jpg')
     .setFooter('Source - musicnotes.com \u007C \u25CF\u25CB');
 
-let pages = [tip1, tip2];
+let pages = [tip1, tip2]
 
 simplydjs.embedPages(client, message, pages, {
   firstEmoji: "927629391129903154",
