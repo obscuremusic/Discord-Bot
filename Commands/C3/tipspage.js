@@ -8,6 +8,8 @@ code:`$djsEval[(async () => {
 const { MessageEmbed } = require('discord.js');
 const simplydjs = require('simply-djs');
 
+// https://leovoel.github.io/embed-visualizer/
+
 let tip1 = {
   "description": "Chord progression formulae may appear to be a difficult math equation at first glance. However, they are not as difficult as you may believe. Roman numerals, which represent notes in a scale, are used to show these charts.\r\nIt will make coming up with root notes a lot easier. Keep in mind that these formulas are tools, not rules. You will come up with chord progressions that sound really nice and natural if you follow these guidelines.",
   "color": 1,
