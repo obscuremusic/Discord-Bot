@@ -24,7 +24,7 @@ let tip2 = new MessageEmbed()
   .setColor('#2f3135');
   
   let tip3 = new MessageEmbed()
-  .setAuthor({ name: 'Production and Workflow Advice | Page - 2', iconURL: 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png'})
+  .setAuthor({ name: 'Production and Workflow Advice | Page - 3', iconURL: 'https://cdn.discordapp.com/attachments/889976693102628904/921376597313978378/20211217_175129.png'})
   .setDescription('When a signal is firmly limited at the threshold, it produces a flat cutoff and many high-frequency harmonics. This is referred to as hard-clipping. Soft clipping, on the other hand, refers to when the clipped signal follows the original at a lower gain, resulting in fewer higher-order harmonics and intermodulation distortion components.')
   .setImage('https://cdn.discordapp.com/attachments/889976693102628904/928241372102815744/InShot_20220105_162928926.jpg')
   .setFooter('Available pages - ○○●')
