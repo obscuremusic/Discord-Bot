@@ -20,7 +20,6 @@ Because all of the bots are hosted on a single server and several bots are runni
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
 ├ RAM Usage            : $truncate[$ram] mb / 512mb
-├ ROM Usage            : $truncate[$djsEval[process.memoryUsage().rss / 1024 / 1024;yes]] mb / 1024 mb
 ├ CPU Usage            : $cpu / 100%
 ├ Processor            : $cropText[$djsEval[require ('os').cpus()[0].model;yes];16]
 ├ Cores / arch         : 8 Core / x64
