@@ -19,10 +19,10 @@ Because all of the bots are hosted on a single server and several bots are runni
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
-├ RAM Usage            : $ram mb / $replaceText[$abbreviate[$maxRam];K; GB;-1]
-├ ROM Usage            : $djsEval[process.memoryUsage().rss / 1024 / 1024;yes] MB / 1024 mb
+├ RAM Usage            : $truncate[$ram] mb / 512mb
+├ ROM Usage            : $truncate[$djsEval[process.memoryUsage().rss / 1024 / 1024;yes]] mb / 1024 mb
 ├ CPU Usage            : $cpu / 100%
-├ Processor            : $djsEval[require ('os').cpus()[0].model;yes]
+├ Processor            : $cropText[$djsEval[require ('os').cpus()[0].model;yes];16]
 ├ Cores / arch         : 8 Core / x64
 └ System / Type        : $djsEval[require ('os').platform();yes]
 \`\`\`}
@@ -33,8 +33,7 @@ Because all of the bots are hosted on a single server and several bots are runni
 └ Node.js Version      : $nodeVersion
 \`\`\`}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
-{color:2f3135}}
-{newEmbed:{image:https://github-readme-stats.vercel.app/api/pin/?username=lethiferal&repo=UMC-Server-bot&show_icons=true&title_color=999999&text_color=636363&icon_color=999999&bg_color=202020&hide_border=true&show_owner=true}{color:2f3135}};853934236687138847]`,
+{color:2f3135}};853934236687138847]`,
   channel: "853934236687138847",
   executeOnStartup: true,
   every: 60000
