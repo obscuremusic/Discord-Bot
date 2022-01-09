@@ -32,8 +32,6 @@ Because all of the bots are hosted on a single server and several bots are runni
 └ Node.js Version      : $nodeVersion
 \`\`\`}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
-{color:2f3135}}
-{newEmbed:{image:https://media.discordapp.net/attachments/889976693102628904/929815845012660234/IMG_20220110_004602.jpg}
 {color:2f3135}};853934236687138847]`,
   channel: "853934236687138847",
   executeOnStartup: true,
