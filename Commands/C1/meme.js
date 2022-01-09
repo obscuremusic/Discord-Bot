@@ -7,7 +7,7 @@ aliases:["dankmeme","shitpost","trashpost","shitposting"],
 code:`$djseval[(async()=>{
 const discordjs = require('discord.js');
 const fetch = require('node-fetch');
-const subReddits = ["dankmeme", "meme", "memes"\\];
+const subReddits = ["dankmeme", "meme", "memes"\\]
 const random = Math.floor(Math.random() * subReddits.length)
 var body = await fetch('https://www.reddit.com/r/' + subReddits[random\\] + '/random/.json')
 body = await body.json()
