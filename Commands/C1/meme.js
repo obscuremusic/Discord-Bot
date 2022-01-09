@@ -1,108 +1,24 @@
 module.exports ={
-name:"event",
-category: "misc",
-description: "Hosts an event.",
-usage: "+event <type>", 
-aliases:["party"],
-code:`
- $onlyif[$message!=;> :information_source: **Choose event to host - \`Youtube\` | \`Poker\` | \`Betrayal\` | \`Chess\` | \`Fishington\` | \`Lettertile\` | \`Wordsnack\` | \`Doodlecrew\` | \`Spellcast\` | \`Awkword\` | \`Puttyparty\`.**]
-$if[$message==Youtube;Error]
- Starting Youtube $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'youtube').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
-$endif
-$if[$message==Poker;Error]
-Starting Poker $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'poker').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
-$endif
-$if[$message==Betrayal;Error]
-Starting Betrayal $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'betrayal').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif
-$if[$message==Chess;Error]
-Starting Chess $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'chess').then(async invite => {
- return message.channel.send(invite.code);
- });
- ] 
- $endif
- $if[$message==Fishington;Error]
- Starting Fishington $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'fishing').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif
- $if[$message==Lettertile;Error]
-Starting Letter tile $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'lettertile').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif
- $if[$message==Wordsnack;Error]
-Starting Word snack $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'wordsnack').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif
- $if[$message==Doodlecrew;Error]
-Starting Doodle crew $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'doodlecrew').then(async invite => {
- return message.channel.send(invite.code);
- });
- ] 
- $endif
- $if[$message==Spellcast;error]
-Starting Spell cast $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'spellcast').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif
- $if[$message==Awkword;Error]
-Starting Awkword $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'awkword').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif
- $if[$message==Puttyparty;error]
-Starting putty party $djseval[
-const { DiscordTogether } = require('discord-together');
-client.discordTogether = new DiscordTogether(client);
-client.discordTogether.createTogetherCode('$voiceID', 'puttyparty').then(async invite => {
- return message.channel.send(invite.code);
- });
- ]
- $endif`
+name:"meme",
+category: "fun",
+description: "Returns something to laugh to.",
+usage: "-meme",
+aliases:["dankmeme","shitpost","trashpost","shitposting"],
+code:`$djseval[(async()=>{
+const discordjs = require('discord.js');
+const fetch = require('node-fetch');
+const subReddits = ["dankmeme", "meme", "memes"\\];
+const random = Math.floor(Math.random() * subReddits.length)
+var body = await fetch('https://www.reddit.com/r/' + subReddits[random\\] + '/random/.json')
+body = await body.json()
+
+const a = body[0\\]
+const embed = new discordjs.MessageEmbed()
+.setTitle(a.data.children[0\\].data.title)
+.setURL('https://reddit.com'+a.data.children[0\\].data.permalink)
+.setColor('000001')
+.setImage(a.data.children[0\\].data.url_overridden_by_dest)
+.setFooter(' 🔺 ' + a.data.children[0\\].data.ups + ' 💬 ' + a.data.children[0\\].data.num_comments + ' - ' + a.data.children[0\\].data.subreddit_name_prefixed);
+message.channel.send(embed)
+})()]`
 }
