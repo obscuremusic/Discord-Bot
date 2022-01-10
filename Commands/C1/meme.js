@@ -12,7 +12,7 @@ const random = Math.floor(Math.random() * subReddits.length)
 var body = await fetch('https://www.reddit.com/r/' + subReddits[random] + '/random/.json')
 body = await body.json()
 
-const a = body[0\\]
+const a = body[0]
 const embed = new discordjs.MessageEmbed()
 .setTitle(a.data.children[0].data.title)
 .setURL('https://reddit.com'+a.data.children[0].data.permalink)
