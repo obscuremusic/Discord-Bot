@@ -14,7 +14,7 @@ Because all of the bots are hosted on a single server and several bots are runni
 ├ Websocket Delay      : $ping ms 
 ├ Transfer Rate        : $roundTenth[$divide[$divide[$multi[$ram;8];$divide[$ping;1000]];1000];2] Gbps ⛗
 ├ Database Latency     : $dbPing ms 
-└ Flextime/Uptime      : $replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$uptime;hour;H];hours;H];minute;M];minutes;M];second;S]seconds;S];,;:]
+└ Flextime/Uptime      : $uptime
 \`\`\`}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
 {color:2f3135}}
