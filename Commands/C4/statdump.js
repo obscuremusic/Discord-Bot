@@ -29,7 +29,7 @@ Because all of the bots are hosted on a single server and several bots are runni
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
 ├ Latest Commit        : $cropText[$jsonRequest[https://api.github.com/repos/lethiferal/UMC-Server-bot/commits/main;sha];7]
-├ Last Updated         : $formatDate[$dateStamp;L], $hour:$minute:$second
+├ Last Updated         : $formatDate[$dateStamp;L], $hour:$minute:$second (UTC)
 └ Node.js Version      : $nodeVersion
 \`\`\`}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
