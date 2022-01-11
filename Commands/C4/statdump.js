@@ -30,7 +30,7 @@ Because all of the bots are hosted on a single server and several bots are runni
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
 ├ RAM Used             : $truncate[$ram] mb
-└ RAM Free             : $sub[512;$truncate[$ram]] ($get[memFree]%)
+└ RAM Free             : $sub[512;$truncate[$ram]] mb
 \`\`\`}
 {thumbnail:https://quickchart.io/chart/render/zm-7d7e7884-1619-48dd-a4a1-bdb3859f18b8?data1=$get[memFree],$get[memUsed]}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
