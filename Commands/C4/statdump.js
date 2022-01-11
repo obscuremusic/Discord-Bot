@@ -20,7 +20,6 @@ Because all of the bots are hosted on a single server and several bots are runni
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
 ├ CPU Usage            : $cpu / 100%
-├ Processor            : $cropText[$djsEval[require ('os').cpus()[0].model;yes];16]
 ├ Total Cores          : $get[cpuCore]
 ├ Clock Speed          : $get[cpuCMHz]
 └ System Type          : $djsEval[require ('os').platform();yes]
