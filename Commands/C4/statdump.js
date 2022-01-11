@@ -25,14 +25,14 @@ Because all of the bots are hosted on a single server and several bots are runni
 ├ Clock Speed          : $get[cpuCMHz]
 └ System Type          : $djsEval[require ('os').platform();yes]
 \`\`\`}
-{thumbnail:https://quickchart.io/chart/render/zm-7d7e7884-1619-48dd-a4a1-bdb3859f18b8?data1=$truncate[$cpu],$sub[100;$truncate[$cpu]]}
+{thumbnail:https://quickchart.io/chart/render/zm-7d7e7884-1619-48dd-a4a1-bdb3859f18b8?data1=$sub[100;$truncate[$cpu]],$truncate[$cpu]}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
 ├ RAM Used             : $truncate[$ram] mb
 └ RAM Free             : $sub[512;$truncate[$ram]] mb
 \`\`\`}
-{thumbnail:https://quickchart.io/chart/render/zm-7d7e7884-1619-48dd-a4a1-bdb3859f18b8?data1=$get[memFree],$get[memUsed]}
+{thumbnail:https://quickchart.io/chart/render/zm-7d7e7884-1619-48dd-a4a1-bdb3859f18b8?data1=$sub[100;$truncate[$multi[$divide[$ram;$sub[512;$truncate[$ram]]];100]]],$truncate[$multi[$divide[$ram;$sub[512;$truncate[$ram]]];100]]}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
 {color:2f3135}}
 {newEmbed:{description:\`\`\`html
@@ -42,12 +42,9 @@ Because all of the bots are hosted on a single server and several bots are runni
 \`\`\`}
 {image:https://cdn.discordapp.com/attachments/889976693102628904/929761765099712602/20220109_211113.jpg}
 {color:2f3135}};853934236687138847]
-
-$let[memFree;$djsEval[var memStat = require('mem-stat'); var free = memStat.freePercent();Math.floor(free);;yes]]
-$let[memUsed;$sub[100;$djsEval[var memStat = require('mem-stat'); var free = memStat.freePercent();Math.floor(free);;yes]]]
 $let[cpuCore;$djsEval[var cpuStat = require('cpu-stat'); var core = cpuStat.totalCores();Math.floor(core);;yes]]
 $let[cpuCMHz;$djsEval[var cpuStat = require('cpu-stat'); var cmhz = cpuStat.avgClockMHz();Math.floor(cmhz)+"MHz";;yes]]
-
+$suppressErrors
 `,
   channel: "853934236687138847",
   executeOnStartup: true,
