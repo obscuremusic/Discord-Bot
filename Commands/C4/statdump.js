@@ -43,7 +43,6 @@ Because all of the bots are hosted on a single server and several bots are runni
 {color:2f3135}};853934236687138847]
 $let[cpuCore;$djsEval[var cpuStat = require('cpu-stat'); var core = cpuStat.totalCores();Math.floor(core);;yes]]
 $let[cpuCMHz;$djsEval[var cpuStat = require('cpu-stat'); var cmhz = cpuStat.avgClockMHz();Math.floor(cmhz)+"MHz";;yes]]
-$suppressErrors
 `,
   channel: "853934236687138847",
   executeOnStartup: true,
