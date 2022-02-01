@@ -1,1 +1,6 @@
-run = "npx node index.js"
+# The command that is executed when the run button is clicked.
+  run = "npx node index.js"
+# See https://github.com/replit/upm for supported languages.
+  language = "nix"
+# Command executed when the project is booted.
+  onBoot = "echo Booting Up!"
